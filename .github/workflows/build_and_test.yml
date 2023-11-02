@@ -1,9 +1,9 @@
-name: GitHub Actions Demo
+name: GitHub Build Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
-    tag:    
-      - 'v1.*'
+    branch:    
+      - main
   pull_request:
     # Sequence of patterns matched against refs/heads
     branches:    

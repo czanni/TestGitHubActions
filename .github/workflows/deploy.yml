@@ -1,0 +1,20 @@
+name: GitHub Deploy Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+  push:
+    tag:    
+      - 'v1.*'
+jobs:
+  Build-And-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
+      - run: echo "need to run deploy release"
+
