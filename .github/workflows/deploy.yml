@@ -2,7 +2,7 @@ name: GitHub Deploy Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
-    tag:    
+    tags:    
       - 'v1.*'
 jobs:
   Build-And-Test:
