@@ -19,6 +19,7 @@ jobs:
         run: mvn -B package --file pom.xml
       - run: mkdir artifact 
       - run: 'mv target/*.jar artifact/' 
+      - run: 'ls artifact/*'
       - name: Create Jar archive
         run: |
           'zip --junk-paths my-artifact artifact/*'
