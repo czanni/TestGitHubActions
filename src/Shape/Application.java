@@ -2,6 +2,7 @@ package Shape;
 
 import java.util.ArrayList;
 
+// Example code for GitHub CI (see workflow file in .github/workflow directory)
 public class Application {
 
     /** Compute the sum of the area of the figures stored in a container.
