@@ -6,4 +6,4 @@ Finalize code
 
 Basic test
 
-Another comment
+Another comment for pull request
